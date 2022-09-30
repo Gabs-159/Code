@@ -23,18 +23,44 @@ Comandos tecnicos do Git/GitHub(no Windows)
  .Pull = Ele é o contrário do push. ele tira do repositório do GitHub para sua máquina.
          ->(É muito bom para quando você está trabalhando em equipe,e aí você tem que continuar seu o código a partir de uma alteração que uma outra pessoa fez.)
 
-ce parou aq gata
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Comandos básicos(no Windows)
 .Listar = Dir
-.Navegar entre pastas = “cd”
+.Navegar entre pastas ou entrar em pastas = “cd”
 .Retroceder = cd ..
-.Limpar = “cls”
+.Limpar = “cls” ou "clear"
 .Criar pasta = mkdir
 .Echo = seria o print no Pycharm e o escreva no Portugol
 .Deletar = rmdir(delete a pasta toda)
 *usar a tecla “TAB”  te ajuda a escrever nomes de arquivos grandes
 *Não se esqueça que as vezes vc vai ter que usar flags para completar seus comandos
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Comandos na prática(no Windows)
+.--version = Mostra a versão do git sendo usado.
+..md = É uma extensão markdown.
+.git init = Inicializa um repositório git vazio.
+.git add 'NomeDoArquivo' = adiciona um arquivo pra ele ser "commitado"
+     ->('git add .' = manda todos os arquivos para a área de stage.)
+.git status = visualização do arquivos a serem "commitados" ou de alguma modificação feita em algum arquivo
+.git remote add origin 'link do repositório'(sem as aspas simples) = faz ligação do repositório e a máquina
+.git push -u origin main = empurra arquivos da máquina para o repositório
+       ->(Lembrando que 'origin' é o apelido dado ao repositório e que o '-u' é usado somente na 1º vez do remote,ou seja, caso esteja usando o remote pela 2º vez ou           mais nao precisa mais colocar '-u')
+.git commit -m "nome da ação do commit"(com aspas duplas mesmo) = "commita" qualquer que seja a modificação feita.
+.git checkout -b "nome do branch" = cria o branch 
+.git checkout main = sai de uma branch para outra.
+      ->(Vale lembrar que a 'main' é uma branch também so qu eela é principal e que no comando no lugar de 'main' vc colocaria o nome da branch para qual vc quer ir).
+.git merge 'nome da branch criada'(sem as aspas simples) = para fazer um merge(Colocar as branch na principal ou colocar uma branch na outra mesmo)
+.git push origin main = fixa depois de ter feito a merge
+.git clone 'link.git'(sem aspas simples) = coloca um repositório no outro.
+.git pull 'depois vc da o enter' = passa as modificações feito no github para sua máquina.
+
+*obs.: 'Master' pode ser mudado para 'main' e continua sendo a principal 
+       -> Caso esteja na 'master' e queira passar para main = git branch -M "main"(com aspas duplas mesmo)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+***Lá no GitHub 
+Se vc vai no repositório de uma pessoa e vc gosta dele vc pode dar um FORK e pega esse repositorio pra vc :)
+Se vc vai no repositório de uma pessoa e pega ele pra vc e faz alguma alteração tem como vc mandar para a pessoa pra ver o que ela acha e se ela aceita a modificação que vc fez. É so da um Pull Request(ta tudo la no GitHub).***
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Como o Git funciona por debaixo dos panos
 . Sha1 = É uma ferramenta de algoritmo de encriptação.A  encriptação gera um conjunto de 40 caracteres identificado de 40 dígitos.
